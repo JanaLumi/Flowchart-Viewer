@@ -9,7 +9,7 @@ This repository allows creators to entirely isolate complex graph layouts (`Merm
 
 ### 🔹 Version 1.0 — Static Interactive Canvas
 
-[flowchart-viewer-1.0](https://janalumi.github.io/Flowchart-Viewer/viewer-1.0.html))
+[flowchart-viewer-1.0](https://janalumi.github.io/Flowchart-Viewer/viewer-1.0.html)
 
 The initial foundational tier focused purely on micro-precision browser graphics and canvas manipulation layers.
 
