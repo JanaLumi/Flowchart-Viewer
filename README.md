@@ -1,7 +1,5 @@
 # Flowchart-Viewer
-A browser-based viewport designed to read and display interactive, high-resolution structural diagrams. Version 2.0 also includes Text-to-Speech (TTS) to read contextual system stories.
-
-This repository allows creators to entirely isolate complex graph layouts (`Mermaid.js` syntax) and rich stories into standalone, labelled `.md` files without compiling complex application dependencies or maintaining a structural database backend.
+A browser-based viewport designed to read and display interactive, high-resolution structural diagrams. Version 2.0 also includes Text-to-Speech (TTS) to read contextual system stories. Markdown files (in the *diagrams* folder) store the graph layouts (`Mermaid.js` syntax) and system stories.
 
 ---
 
@@ -23,10 +21,10 @@ The initial foundational tier focused purely on micro-precision browser graphics
 
 The architecture introduces an asynchronous content parser and a localised audio runtime engine to turn architectural models into accessible stories.
 
-* **Property Label Ingestion:** Reads standalone markdown files formatted with strict data properties (`title:`, `text:`, and `code:` blocks).
+* **Property Labels:** Reads standalone markdown files formatted with strict data properties (`title:`, `text:`, and `code:` blocks).
 * **Zero-Dependency Core Execution:** Operates entirely within browser memory via raw string index boundary lookups, bypassing database servers, layout side effects, or configuration environments.
-* **Local Text-to-Speech Engine:** Grabs whatever story content is visible on-screen at the exact moment of activation, managing audio synthesis parameters, tracking word boundaries, and honoring live pitch/rate adjustments locally.
-* **Asynchronous Fallback Architecture:** Automatically displays local matrix text and fires setup warnings if external files are unconfigured, ensuring first-time viewers are never faced with a blank viewport.
+* **Local Text-to-Speech:** Grabs whatever story content is visible on-screen at the exact moment of activation, managing audio synthesis parameters, tracking word boundaries, and honoring live pitch/rate adjustments locally.
+* **Asynchronous Fallback:** Automatically displays local matrix text and fires setup warnings if external files are unconfigured.
 
 ---
 
@@ -68,7 +66,7 @@ Open the `diagrams/` folder, duplicate a template file, and format your specific
 
 ### 3. Align the Application Matrix
 
-Open `index.html`, navigate to the `perspectives` data matrix inside the script tags, and link your file destination properties directly to the paths of your newly created documents:
+Open `viewer-2.0.html`, navigate to the `perspectives` data matrix inside the script tags, and link your file destination properties directly to the paths of the new documents:
 
 ```javascript
 const perspectives = {
