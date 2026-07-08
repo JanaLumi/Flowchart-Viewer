@@ -2,10 +2,6 @@ title: "System Viewer — Customising Your Diagram Journey",
 text: `<p>This lifecycle journey details the chronological sequence required to customize the viewport architecture for your own project structures. It charts the progression from a raw directory layout down to active runtime state transformations within a deployed viewer environment.</p>
 <p>Step 1 outlines the local repository workspace setup, duplicating template modules to clear baseline constraints. Step 2 focuses on content isolation, separating custom technical flowchart logic from descriptive narrative essays using clean property blocks.</p>
 <p>Step 3 commands the asynchronous alignment, tracking exactly how property index configurations bind file links to physical layout nodes. Step 4 governs deployment execution, compiling local system arrays onto static hosting networks to make your custom visual databases globally indexable via the viewport template.</p>`,
-title: "Console Architecture — Customizing Your Diagram Journey",
-text: `<p>This lifecycle journey details the chronological sequence required to customize the console architecture for your own project structures. It charts the progression from a raw directory layout down to active runtime state transformations within a deployed dashboard environment.</p>
-<p>Step 1 outlines the local repository workspace setup, duplicating template modules to clear baseline constraints. Step 2 focuses on content isolation, separating custom technical flowchart logic from descriptive narrative essays using clean property blocks.</p>
-<p>Step 3 commands the asynchronous alignment, tracking exactly how property index configurations bind file links to physical layout nodes. Step 4 governs deployment execution, compiling local system arrays onto static hosting networks to make your custom visual databases globally indexable.</p>`,
 code: `flowchart TD
     %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#EEEDFE', 'primaryBorderColor': '#534AB7', 'primaryTextColor': '#26215C', 'lineColor': '#888780', 'secondaryColor': '#E1F5EE', 'fontSize': '13px'}}}%%
 
