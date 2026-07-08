@@ -11,7 +11,9 @@ The initial foundational tier focused purely on micro-precision browser graphics
 * **Magnifying Lens Core:** Tracks cursor coordinates to clone, scale, and paint high-density vectors onto a floating canvas element.
 * **Granular Wheel Zooming:** Captures browser scrolling events to modify magnification depth incrementally between **1.5× and 8.0×** without distorting layout text or arrow markers.
 
-## 🔸 Version 2.0 — Decoupled Story Viewport
+---
+
+### 🔸 Version 2.0 — Decoupled Story Viewport
 
 [flowchart-viewer-2.0](https://janalumi.github.io/Flowchart-Viewer/viewer-2.0.html)
 
@@ -22,13 +24,11 @@ The architecture introduces an asynchronous content parser and a localised audio
 * **Local Text-to-Speech:** Grabs whatever story content is visible on-screen at the exact moment of activation, managing audio synthesis parameters, tracking word boundaries, and honoring live pitch/rate adjustments locally.
 * **Asynchronous Fallback:** Automatically displays local matrix text and fires setup warnings if external files are unconfigured.
 
----
-
-## 🛠️ File Structure & Labeled Properties
+#### 🛠️ File Structure & Labeled Properties
 
 To feed data into the viewport matrix, your external text documents (stored inside the `diagrams/` folder) must wrap configuration lines inside explicit delimiters. This keeps data assets readable by humans and cleanly sliceable by the computer.
 
-### The Standard Document Schema:
+#### The Standard Document Schema:
 
 ```markdown
 title: "Your Perspective Title Here",
@@ -41,9 +41,9 @@ code: `flowchart TD
 
 ---
 
-## 🚀 Setting Up Your Own Diagram Journey
+### 🚀 Setting Up Your Own Diagram Journey
 
-### 1. Replicate the Structure
+#### 1. Replicate the Structure
 
 Fork or clone this repository to your local studio workplace environment, ensuring your file paths align with the template variables:
 
@@ -56,11 +56,11 @@ Fork or clone this repository to your local studio workplace environment, ensuri
 
 ```
 
-### 2. Isolate Your Content
+#### 2. Isolate Your Content
 
 Open the `diagrams/` folder, duplicate a template file, and format your specific metrics inside the `title:`, `text:`, and `code:` parameters shown in the schema above.
 
-### 3. Align the Application Matrix
+#### 3. Align the Application Matrix
 
 Open `viewer-2.0.html`, navigate to the `perspectives` data matrix inside the script tags, and link your file destination properties directly to the paths of the new documents:
 
