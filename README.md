@@ -1,7 +1,7 @@
 # Flowchart-Viewer
 A browser-based viewport designed to read and display interactive, high-resolution structural diagrams. Version 2.0 also includes Text-to-Speech (TTS) to read contextual system stories.
 
-This repository allows creators to entirely isolate complex graph layouts (`Mermaid.js` syntax) and rich stories into standalone, cleanly labeled `.md` files without compiling complex application dependencies or maintaining a structural database backend.
+This repository allows creators to entirely isolate complex graph layouts (`Mermaid.js` syntax) and rich stories into standalone, labelled `.md` files without compiling complex application dependencies or maintaining a structural database backend.
 
 ---
 
