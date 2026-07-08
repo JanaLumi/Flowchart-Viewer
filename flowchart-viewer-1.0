@@ -148,7 +148,34 @@
     <div class="mermaid">
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#EEEDFE', 'primaryBorderColor': '#534AB7', 'primaryTextColor': '#26215C', 'lineColor': '#888780', 'secondaryColor': '#E1F5EE', 'tertiaryColor': '#FAEEDA', 'fontSize': '16px'}}}%%
 flowchart TD
-    [Insert mermaid flowchart script here]
+    LOAD["Page loads\nMermaid.js initialises"] --> RENDER["Mermaid renders\ndiagram from source text"]
+    RENDER --> SVG["SVG written\nto DOM"]
+    SVG --> CAPTURE["SVG serialized\nto in-memory image"]
+    CAPTURE --> READY["Viewer ready"]
+
+    READY --> HOVER{"User moves\ncursor over diagram"}
+    HOVER --> LENS["Circular lens\nappears at cursor position"]
+    LENS --> CROP["Canvas crops and scales\nimage at cursor coordinates"]
+    CROP --> PAINT["Magnified view\npainted inside lens"]
+    PAINT --> HOVER
+
+    READY --> SCROLL{"User scrolls\nwheel"}
+    SCROLL --> SCALE["Zoom level adjusts\n1.5× — 8×"]
+    SCALE --> BADGE["Zoom badge\nappears briefly"]
+    BADGE --> READY
+
+    READY --> LEAVE{"Cursor leaves\ndiagram"}
+    LEAVE --> HIDE["Lens hidden"]
+    HIDE --> READY
+
+    classDef trigger fill:#FAEEDA,stroke:#854F0B,color:#412402
+    classDef process fill:#E1F5EE,stroke:#0F6E56,color:#04342C
+    classDef decision fill:#EEEDFE,stroke:#534AB7,color:#26215C
+    classDef endpoint fill:#F1EFE8,stroke:#5F5E5A,color:#2C2C2A
+
+    class LOAD,READY trigger
+    class RENDER,SVG,CAPTURE,LENS,CROP,PAINT,SCALE,BADGE,HIDE process
+    class HOVER,SCROLL,LEAVE decision
     </div>
   </div>
 
