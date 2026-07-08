@@ -1,11 +1,7 @@
 # Flowchart-Viewer
 A browser-based viewport designed to read and display interactive, high-resolution structural diagrams. Version 2.0 also includes Text-to-Speech (TTS) to read contextual system stories. Markdown files (in the *diagrams* folder) store the graph layouts (`Mermaid.js` syntax) and system stories.
 
----
-
-## 🏛️ Evolution Matrix
-
-### 🔹 Version 1.0 — Static Interactive Canvas
+## 🔹 Version 1.0 — Static Interactive Canvas
 
 [flowchart-viewer-1.0](https://janalumi.github.io/Flowchart-Viewer/viewer-1.0.html)
 
@@ -15,7 +11,7 @@ The initial foundational tier focused purely on micro-precision browser graphics
 * **Magnifying Lens Core:** Tracks cursor coordinates to clone, scale, and paint high-density vectors onto a floating canvas element.
 * **Granular Wheel Zooming:** Captures browser scrolling events to modify magnification depth incrementally between **1.5× and 8.0×** without distorting layout text or arrow markers.
 
-### 🔸 Version 2.0 — Decoupled Story Viewport
+## 🔸 Version 2.0 — Decoupled Story Viewport
 
 [flowchart-viewer-2.0](https://janalumi.github.io/Flowchart-Viewer/viewer-2.0.html)
 
