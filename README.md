@@ -17,7 +17,7 @@ The initial foundational tier focused purely on micro-precision browser graphics
 * **Magnifying Lens Core:** Tracks cursor coordinates to clone, scale, and paint high-density vectors onto a floating canvas element.
 * **Granular Wheel Zooming:** Captures browser scrolling events to modify magnification depth incrementally between **1.5× and 8.0×** without distorting layout text or arrow markers.
 
-### 🔸 Version 2.0 — Decoupled Narrative Viewport
+### 🔸 Version 2.0 — Decoupled Story Viewport
 
 [flowchart-viewer-2.0](https://janalumi.github.io/flowchart-viewer-2.0.html)
 
@@ -25,7 +25,7 @@ The architecture introduces an asynchronous content parser and a localised audio
 
 * **Property Label Ingestion:** Reads standalone markdown files formatted with strict data properties (`title:`, `text:`, and `code:` blocks).
 * **Zero-Dependency Core Execution:** Operates entirely within browser memory via raw string index boundary lookups, bypassing database servers, layout side effects, or configuration environments.
-* **Local Text-to-Speech Engine:** Grabs whatever narrative content is visible on-screen at the exact moment of activation, managing audio synthesis parameters, tracking word boundaries, and honoring live pitch/rate adjustments locally.
+* **Local Text-to-Speech Engine:** Grabs whatever story content is visible on-screen at the exact moment of activation, managing audio synthesis parameters, tracking word boundaries, and honoring live pitch/rate adjustments locally.
 * **Asynchronous Fallback Architecture:** Automatically displays local matrix text and fires setup warnings if external files are unconfigured, ensuring first-time viewers are never faced with a blank viewport.
 
 ---
@@ -38,8 +38,8 @@ To feed data into the viewport matrix, your external text documents (stored insi
 
 ```markdown
 title: "Your Perspective Title Here",
-text: `<p>First paragraph of your perspective narrative essay...</p>
-<p>Second paragraph of your narrative context...</p>`,
+text: `<p>First paragraph of your perspective story essay...</p>
+<p>Second paragraph of your story context...</p>`,
 code: `flowchart TD
   A[Your Structural Node] --> B[Your Next Connecting Layer]`
 
