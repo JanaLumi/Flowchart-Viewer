@@ -74,7 +74,7 @@ Open `index.html`, navigate to the `perspectives` data matrix inside the script 
 const perspectives = {
   journey: {
     title: "Your Custom Journey View",
-    file: "../diagrams/your-custom-journey.md",
+    file: "diagrams/your-custom-journey.md",
     text: "<p>Baseline fallback text for first-time loads...</p>"
   }
 };
