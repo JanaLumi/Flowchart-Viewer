@@ -9,7 +9,7 @@ This repository allows creators to entirely isolate complex graph layouts (`Merm
 
 ### 🔹 Version 1.0 — Static Interactive Canvas
 
-[flowchart-viewer-1.0](https://janalumi.github.io/flowchart-viewer-1.0.html)
+[flowchart-viewer-1.0](https://janalumi.github.io/Flowchart-Viewer/viewer-1.0.html))
 
 The initial foundational tier focused purely on micro-precision browser graphics and canvas manipulation layers.
 
@@ -19,7 +19,7 @@ The initial foundational tier focused purely on micro-precision browser graphics
 
 ### 🔸 Version 2.0 — Decoupled Story Viewport
 
-[flowchart-viewer-2.0](https://janalumi.github.io/flowchart-viewer-2.0.html)
+[flowchart-viewer-2.0](https://janalumi.github.io/Flowchart-Viewer/viewer-2.0.html))
 
 The architecture introduces an asynchronous content parser and a localised audio runtime engine to turn architectural models into accessible stories.
 
