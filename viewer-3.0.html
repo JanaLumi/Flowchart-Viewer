@@ -48,7 +48,15 @@
     margin-bottom: 1.5rem;
   }
 
-  .tabs { display: flex; gap: 0.5rem; }
+  .tabs {
+    display: flex;
+    gap: 0.5rem;
+    max-width: 45%;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    margin-right: 20px;
+  }
+  
   .tab-btn {
     font-family: "DM Mono", monospace;
     font-size: 0.8rem;
@@ -80,6 +88,7 @@
   
   .audio-modifiers {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 0.75rem;
     font-family: "DM Mono", monospace;
