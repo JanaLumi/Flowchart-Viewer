@@ -38,7 +38,7 @@ code: `flowchart TD
   A[Your Structural Node] --> B[Your Next Connecting Layer]`
 
 ```
-##### Linking diagrams to data matrix
+##### JavaScript Configuration
 Open `viewer-X.0.html`, navigate to the `perspectives` data matrix inside the script tags, and link your file destination properties directly to the paths of the new documents.
 
 ### 4. Deploy Your Viewport
