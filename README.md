@@ -1,9 +1,9 @@
 # Flowchart-Viewer
 A browser-based viewport designed to read and display interactive, high-resolution structural diagrams. Version 2.0 also includes Text-to-Speech (TTS) to read contextual system stories. Markdown files (in the *diagrams* folder) store the graph layouts (`Mermaid.js` syntax) and system stories.
 
-### 🚀 Setting Up Your Own Diagram Journey
+## 🚀 Setting Up Your Own Diagram Journey
 
-#### 1. Replicate the Structure
+### 1. Replicate the Structure
 
 Fork or clone this repository to your local studio workplace environment, ensuring your file paths align with the template variables:
 
@@ -16,14 +16,30 @@ Fork or clone this repository to your local studio workplace environment, ensuri
 
 ```
 
-#### 2. Isolate Your Content
+### 2. Isolate Your Content
 
-Open the `diagrams/` folder, duplicate a template file, and format your specific metrics inside the `title:`, `text:`, and `code:` parameters shown in the schema above.
+Open the `diagrams/` folder, duplicate a template file, and format your specific metrics inside the `title:`, `text:`, and `code:` parameters shown in the schema in step 3.
 
-#### 3. Align the Application Matrix
+### 3. Align the Application Matrix
 
-Select the version you want to work with (details below). And edit the perspectives
+Select the version you want to work with (details below). And edit the markdown files and perspectives
 
+#### 🛠️ File Structure & Labelled Properties
+
+To feed data into the viewport matrix, your external text documents (stored inside the `diagrams/` folder) must wrap configuration lines inside explicit delimiters. This keeps data assets readable by humans and cleanly sliceable by the computer.
+
+##### The Standard Document Schema:
+
+```markdown
+title: "Your Perspective Title Here",
+text: `<p>First paragraph of your perspective story essay...</p>
+<p>Second paragraph of your story context...</p>`,
+code: `flowchart TD
+  A[Your Structural Node] --> B[Your Next Connecting Layer]`
+
+```
+##### Linking diagrams to data matrix
+Open `viewer-X.0.html`, navigate to the `perspectives` data matrix inside the script tags, and link your file destination properties directly to the paths of the new documents.
 
 ### 4. Deploy Your Viewport
 
@@ -55,21 +71,6 @@ The architecture introduces an asynchronous content parser and a localised audio
 * **Zero-Dependency Core Execution:** Operates entirely within browser memory via raw string index boundary lookups, bypassing database servers, layout side effects, or configuration environments.
 * **Local Text-to-Speech:** Grabs whatever story content is visible on-screen at the exact moment of activation, managing audio synthesis parameters, tracking word boundaries, and honouring live pitch/rate adjustments locally.
 * **Asynchronous Fallback:** Automatically displays local matrix text and fires setup warnings if external files are unconfigured.
-
-#### 🛠️ File Structure & Labelled Properties
-
-To feed data into the viewport matrix, your external text documents (stored inside the `diagrams/` folder) must wrap configuration lines inside explicit delimiters. This keeps data assets readable by humans and cleanly sliceable by the computer.
-
-#### The Standard Document Schema:
-
-```markdown
-title: "Your Perspective Title Here",
-text: `<p>First paragraph of your perspective story essay...</p>
-<p>Second paragraph of your story context...</p>`,
-code: `flowchart TD
-  A[Your Structural Node] --> B[Your Next Connecting Layer]`
-
-```
 
 #### Html and Javascript edits:
 
