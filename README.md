@@ -26,9 +26,13 @@ Select the version you want to work with (details below). And edit the markdown 
 
 #### 🛠️ File Structure & Labelled Properties
 
+Version 1.0 edit the flowchart directly in the html file.
+
+##### Versions 2.0 or later:
+
 To feed data into the viewport matrix, your external text documents (stored inside the `diagrams/` folder) must wrap configuration lines inside explicit delimiters. This keeps data assets readable by humans and cleanly sliceable by the computer.
 
-##### The Standard Document Schema:
+**The Standard Document Schema:**
 
 ```markdown
 title: "Your Perspective Title Here",
@@ -38,7 +42,7 @@ code: `flowchart TD
   A[Your Structural Node] --> B[Your Next Connecting Layer]`
 
 ```
-##### JavaScript Configuration
+** JavaScript Configuration**
 Open `viewer-X.0.html`, navigate to the `perspectives` data matrix inside the script tags, and link your file destination properties directly to the paths of the new documents.
 
 ### 4. Deploy Your Viewport
