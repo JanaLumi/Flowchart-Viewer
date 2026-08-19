@@ -35,6 +35,25 @@
   header h1 { font-family: Merriweather, Georgia, serif; font-size: 1.3rem; font-weight: 500; color: #2c2c2a; }
   header p { font-family: "DM Mono", Courier, monospace, sans-serif; font-size: 0.85rem; color: #888780; margin-top: 0.2rem; }
 
+  .madeby {
+    font-size: 0.75rem;
+    background: #f8fafc;
+    border: 1px solid var(--border-color);
+    padding: 6px 12px;
+    border-radius: 20px;
+    color: var(--text-muted);
+  }
+  
+  .madeby a {
+    color: var(--brand-color);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .madeby a:hover {
+    color: var(--accent-color);
+  }
+
   .legend {
     display: flex;
     gap: 1.25rem;
@@ -134,6 +153,7 @@
 <header>
   <h1>Flowchart Viewer — system diagram</h1>
   <p>Hover to explore. Scroll wheel adjusts magnification. For vertical scroll, hold down a mouse button while scrolling</p>
+  <span class="madeby">Made by <a href="https://janalumi.github.io" target="_blank" rel="noopener">JanaLumi</a></span><!-- | Diagram by <a href="https://www.yourlink.com" target="_blank" rel="noopener">Diagram Author Name/Alias</a></span> -->
 </header>
 
 <div class="legend">
